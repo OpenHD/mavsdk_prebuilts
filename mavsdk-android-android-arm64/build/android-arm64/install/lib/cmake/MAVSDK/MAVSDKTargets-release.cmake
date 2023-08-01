@@ -12,8 +12,8 @@ set_target_properties(MAVSDK::mavsdk PROPERTIES
   IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/lib/libmavsdk.a"
   )
 
-list(APPEND _cmake_import_check_targets MAVSDK::mavsdk )
-list(APPEND _cmake_import_check_files_for_MAVSDK::mavsdk "${_IMPORT_PREFIX}/lib/libmavsdk.a" )
+list(APPEND _IMPORT_CHECK_TARGETS MAVSDK::mavsdk )
+list(APPEND _IMPORT_CHECK_FILES_FOR_MAVSDK::mavsdk "${_IMPORT_PREFIX}/lib/libmavsdk.a" )
 
 # Commands beyond this point should not need to know the version.
 set(CMAKE_IMPORT_FILE_VERSION)
