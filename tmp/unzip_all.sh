@@ -28,7 +28,7 @@ unzip_and_copy MAVSDK-android-x86.zip mavsdk-android-android-x86.7z
 unzip_and_copy MAVSDK-android-x86_64.zip mavsdk-android-android-x86_64.7z
 
 # is zipped / built differently, since it comes from a different builder. whatever
-mkdir output/android-arm64
-unzip MAVSDK-android-arm64.zip -d output/android-arm64
+mkdir -p output/android-arm64/install
+unzip MAVSDK-android-arm64.zip -d output/android-arm64/install/
 
 
